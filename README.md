@@ -1,2 +1,2 @@
-# PasswordReminder v 1.0
+# PasswordReminder 1.0
 Terminal based password reminder
