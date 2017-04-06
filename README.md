@@ -1,5 +1,6 @@
-# PasswordReminder 1.2
+# PasswordReminder 2.0
 Terminal based password reminder
-Changes from 1.0:
-- possibility to choose the filename and path of the password file
-- option to generate random passwords automatically
+Changes from 1.2:
+- Java FX user interface
+- changed file storage format to serialized Base64
+- added master password protection
