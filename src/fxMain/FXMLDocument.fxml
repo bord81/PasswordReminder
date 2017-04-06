@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ancor" prefHeight="335.0" prefWidth="356.0" style="-fx-background-color: #f0f0f5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxMain.FXMLDocumentController">
+   <children>
+      <Button fx:id="genrand" focusTraversable="false" layoutX="75.0" layoutY="186.0" mnemonicParsing="false" onMouseClicked="#genRandHandler" prefHeight="30.0" prefWidth="207.0" text="Generate random password" visible="false" />
+      <Button fx:id="ok" focusTraversable="false" layoutX="77.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#okHandler" prefHeight="30.0" prefWidth="207.0" text="OK!" visible="false" />
+      <TextField fx:id="pass_field" editable="false" focusTraversable="false" layoutX="95.0" layoutY="149.0" onKeyPressed="#passHandler" promptText="password" visible="false" />
+      <TextField fx:id="url_field" editable="false" focusTraversable="false" layoutX="95.0" layoutY="85.0" promptText="www/email address" visible="false" />
+      <Button fx:id="addpass" focusTraversable="false" layoutX="75.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#addpassHanlder" prefHeight="30.0" prefWidth="207.0" text="Create new file">
+         <font>
+            <Font name="Avenir Oblique" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="login_field" editable="false" focusTraversable="false" layoutX="95.0" layoutY="117.0" promptText="login" visible="false" />
+      <Label fx:id="label" alignment="CENTER" ellipsisString="...   " layoutX="21.0" layoutY="8.0" prefHeight="27.0" prefWidth="318.0" textFill="#a12828">
+         <font>
+            <Font name="Avenir Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewstor" focusTraversable="false" layoutX="75.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#viewHandler" prefHeight="30.0" prefWidth="207.0" text="Open passwords file">
+         <font>
+            <Font name="Avenir Oblique" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="prev" focusTraversable="false" layoutX="21.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#prevHandler" text="Prev" visible="false" />
+      <Button fx:id="next" focusTraversable="false" layoutX="292.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#nextHandler" text="Next" visible="false" />
+      <Pane fx:id="gpass_pane" layoutX="-1.0" layoutY="28.0" prefHeight="323.0" prefWidth="356.0" visible="false">
+         <children>
+            <Label fx:id="gpass_label" alignment="CENTER" layoutX="6.0" layoutY="14.0" prefHeight="30.0" prefWidth="345.0" text="Enter pass size (long takes a while)" />
+            <TextField fx:id="gpass_field" layoutX="95.0" layoutY="153.0" />
+            <Button fx:id="gpass_button" layoutX="130.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#gpassHandler" prefHeight="42.0" prefWidth="85.0" text="OK!" />
+         </children>
+      </Pane>
+      <Button fx:id="delete" focusTraversable="false" layoutX="76.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#deleteHandler" prefHeight="27.0" prefWidth="207.0" text="Delete" visible="false" />
+      <Pane fx:id="dentry_pane" prefHeight="238.0" prefWidth="356.0" visible="false">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="130.0" layoutY="14.0" prefHeight="27.0" prefWidth="109.0" text="Delete entry?" textAlignment="CENTER" />
+            <Button fx:id="dentry_yes" focusTraversable="false" layoutX="100.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#delYesHandler" text="Yes" />
+            <Button fx:id="dentry_no" focusTraversable="false" layoutX="220.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#delNoHandler" text="No" />
+         </children>
+      </Pane>
+      <Label fx:id="url_label" layoutX="52.0" layoutY="90.0" prefHeight="16.0" prefWidth="47.0" text="URL" visible="false" />
+      <Label fx:id="login_label" layoutX="52.0" layoutY="122.0" prefHeight="16.0" prefWidth="47.0" text="Login" visible="false" />
+      <Label fx:id="pass_label" layoutX="54.0" layoutY="154.0" prefHeight="16.0" prefWidth="47.0" text="Pass" visible="false" />
+   </children>
+</AnchorPane>
