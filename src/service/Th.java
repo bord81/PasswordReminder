@@ -18,7 +18,7 @@ public class Th extends Thread {
         if (digit != null) {
             PasswordGen.add(digit);
         } else {
-            PasswordGen.add(PasswordGen.abc[(int) System.currentTimeMillis() % 52]);
+            PasswordGen.add(PasswordGen.abc[Math.abs((int) System.currentTimeMillis() % 52)]);
 
         }
     }
